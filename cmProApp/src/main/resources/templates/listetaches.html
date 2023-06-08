@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CmPro</title>
+</head>
+<body>
+
+<h1> Liste des tâches </h1>
+
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Id</th>
+    </tr>
+    <tr th:each="taches : ${taches}">
+        <td th:text="${taches.nom}"></td>
+        <td th:text="${taches.idTaches}"></td>
+    </tr>
+</table>
+
+<p>
+    <a th:href="@{/}">Retour a la page d'acceuil</a>
+</p>
+
+</body>
+</html>
