@@ -1,5 +1,6 @@
 package com.example.codeurs.cmProApp.database;
 
+import com.example.codeurs.cmProApp.models.Client;
 import com.example.codeurs.cmProApp.models.Tache;
 
 import java.util.ArrayList;
@@ -7,6 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 public final class CmProDataBase {
+
 
     private static List<Tache> tacheList;
 
@@ -56,6 +58,12 @@ public final class CmProDataBase {
 
         return tacheList;
     }
+
+
+
+
+
+
 
 }
 

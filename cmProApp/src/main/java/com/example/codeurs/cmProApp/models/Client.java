@@ -1,8 +1,20 @@
 package com.example.codeurs.cmProApp.models;
 
-import java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-public class Client extends Personne {
+@Data
+@AllArgsConstructor
+@Builder
+@NoArgsConstructor
+public class Client {
+    private int idClient;
+    private String nom;
+    private String prenom;
+    private String adressMail;
+    private String adressHabitation;
+    private String numeroTelephone;
 
-    private Date dateAnniversaire;
 }
